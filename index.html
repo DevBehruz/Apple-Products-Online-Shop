@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Filterable products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="search-container">
+            <input type="search" id="search-input" placeholder="Search...">
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div id="buttons">
+            <button class="btn-value" onclick="filterProduct('all')">All</button>
+            <button class="btn-value" onclick="filterProduct('Phone')">Phone</button>
+            <button class="btn-value" onclick="filterProduct('Computer')">Computer</button>
+            <button class="btn-value" onclick="filterProduct('Watch')">Watch</button>
+            <button class="btn-value" onclick="filterProduct('Tv')">Tv</button>
+        </div>
+        <div id="products"></div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

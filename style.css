@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #f5f8ff;
+}
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+#search-container{
+    margin: 16px 0;
+}
+#search-container input{
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #110f29;
+    padding: 16px 4.8px;
+}
+#search-container input:focus{
+    border-bottom-color: #4c3df5;
+}
+#search-container button{
+    padding: 16px 32px;
+    margin-left: 10px;
+    margin-top: 8px;
+    background-color: #6759ff;
+    color: #fff;    
+    border-radius: 5px;
+    cursor: pointer;
+}
+#search-container button i{
+    font-size: 1.15rem;
+}
+.btn-value{
+    border: 1px solid #6759ff;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: #4c3df5;
+    background-color: transparent;
+}
+.active{
+    color:#fff;
+    background-color: #4c3df5;
+}
+#products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5rem;
+    padding: 2rem 0;
+}
+.card{
+    background-color: white;
+    max-width: 300px;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+.card:hover{
+    box-shadow: 1em 1.2em 2.5em rgba(1, 2, 255, 0.1);
+}
+.image-container{
+    text-align: center ;
+}
+.image-container:hover img{
+    transform: scale(0.8,0.8);
+    transition: .5s;
+}
+img{
+    max-width: 100%;
+    object-fit: contain;
+    height: 15rem;
+    transition: .5s;
+}
+.container{
+    padding-top: 1rem;
+    color: #110f29;
+}
+
+.hide{
+    display: none;
+}
+@media  screen and (max-width:720px) {
+    img{
+        max-width: 100%;
+        object-fit: contain;
+        height: 10rem;
+    }
+    .card{
+        max-width: 10rem;
+        margin-top:1rem;
+    }
+    #products{
+        grid-template-columns: auto auto;
+        grid-column-gap: 1rem;
+    }
+    .btn-value{
+       margin-top: 1rem;
+    }
+}
